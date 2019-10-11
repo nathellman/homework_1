@@ -1,0 +1,101 @@
+<html>
+<head lang="en">
+  <title>Article Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <h1>Add New Article</h1>
+
+<form>
+  <div class="form-group">
+    <label for="title">Article Title</label>
+    <input type="text" class="form-control" id="titleInput" placeholder="title">
+  </div>
+  <div class="form-group">
+    <label for="author">Article Author</label>
+    <input type="text" class="form-control" id="authorInput" placeholder="author">
+  </div>
+  <div class="form-row">
+    <div class="col">
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Upload Files:</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+      <label class="my-1 mr-2" for="selectionInput">Pages</label>
+      <select class="custom-select my-1 mr-2" id="selectionInput">
+        <option selected>Choose...</option>
+        <option value="1">Academics</option>
+        <option value="2">Fun</option>
+        <option value="3">Something Else</option>
+      </select>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="textbox">Article Text</label>
+    <textarea class="form-control" id="textbox" rows="6"></textarea>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="checkboxes">Select Tags</label>
+      <br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Python</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">C++</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+        <label class="form-check-label" for="inlineCheckbox3">Java</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+        <label class="form-check-label" for="inlineCheckbox4">Scala</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+        <label class="form-check-label" for="inlineCheckbox5">Perl</label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+        <label for="buttonVis">Visibility</label>
+        <br>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>Public
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Private
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label for="login">Login to Finish Submitting</label>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <div class="col">
+      <input type="password" placeholder="Password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+    </div>
+</div>
+<br>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+  <label class="form-check-label" for="inlineCheckbox6">Remember me</label>
+</div>
+<div>
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</div>
